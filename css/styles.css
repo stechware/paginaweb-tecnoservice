@@ -202,3 +202,43 @@ footer {
     display: block;
   }
 }
+
+
+/* ======== CARRUSEL ======== */
+#galeria {
+  background: var(--color-blanco);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(100% * 6);
+  animation: slide 24s infinite linear;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Animación del desplazamiento */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  16.6% { transform: translateX(-100%); }
+  33.3% { transform: translateX(-200%); }
+  50% { transform: translateX(-300%); }
+  66.6% { transform: translateX(-400%); }
+  83.3% { transform: translateX(-500%); }
+  100% { transform: translateX(0); }
+}
