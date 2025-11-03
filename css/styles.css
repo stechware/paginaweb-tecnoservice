@@ -202,3 +202,31 @@ footer {
     display: block;
   }
 }
+
+/* ======== BOTÓN WHATSAPP ======== */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-decoration: none;
+  z-index: 200;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
+}
+
+.whatsapp-btn i {
+  vertical-align: middle;
+}
